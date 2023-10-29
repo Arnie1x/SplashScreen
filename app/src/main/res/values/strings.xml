@@ -5,8 +5,14 @@
     <string name="first_fragment_label">Fragment 1</string>
     <string name="second_fragment_label">Fragment 2</string>
     <string name="third_fragment_label">Fragment 3</string>
+    <string name="fourth_fragment_label">Fragment 4</string>
     <string name="next">Fragment 2</string>
     <string name="previous">Fragment 1</string>
+    <string name="dummy_text_1">A Fragment represents a reusable portion of your app\'s UI. A fragment
+        defines and manages its own layout, has its own lifecycle, and can handle its own input
+        events. Fragments can't live on their own. </string>
+    <string name="dummy_text_2">They must be hosted by an activity or another fragment. The
+        fragment’s view hierarchy becomes part of, or attaches to, the host’s view hierarchy.</string>
 
     <string name="hello_first_fragment">Fragment 1</string>
     <string name="hello_second_fragment">Fragment 2 Arg: %1$s</string>
