@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="@color/design_default_color_background"
         app:cardCornerRadius="8dp"
         app:contentPadding="8dp">
 
@@ -29,7 +28,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="@color/design_default_color_background"
         app:cardCornerRadius="8dp"
         app:contentPadding="8dp">
 
@@ -66,7 +64,6 @@
                     android:cropToPadding="true"
                     android:maxHeight="200dp"
                     android:scaleType="fitStart"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/strathmore" />
 
                 <ImageView
@@ -80,7 +77,6 @@
                     android:cropToPadding="true"
                     android:maxHeight="200dp"
                     android:scaleType="fitStart"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/strathmore" />
 
                 <ImageView
@@ -93,7 +89,6 @@
                     android:cropToPadding="true"
                     android:maxHeight="200dp"
                     android:scaleType="fitStart"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/strathmore" />
             </LinearLayout>
         </HorizontalScrollView>

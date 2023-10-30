@@ -1,13 +1,10 @@
 package com.example.splashscreen
 
 import android.os.Bundle
-import android.app.Activity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.webkit.WebView
-import com.example.splashscreen.databinding.FragmentFirstBinding
 import com.example.splashscreen.databinding.FragmentFourthBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -47,8 +44,6 @@ class FourthFragment : Fragment() {
     ): View? {
 
         _binding = FragmentFourthBinding.inflate(inflater, container, false)
-        val myWebView: WebView = binding.webview.findViewById(R.id.webview)
-        myWebView.loadUrl("https://www.google.com")
         return binding.root
 
     }

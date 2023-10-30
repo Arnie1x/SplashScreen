@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="@color/design_default_color_background"
         app:cardCornerRadius="8dp"
         app:contentPadding="8dp">
 
@@ -26,7 +25,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="@color/design_default_color_background"
         app:cardCornerRadius="8dp"
         app:contentPadding="8dp">
 
@@ -36,10 +34,5 @@
             android:layout_height="wrap_content"
             android:text="@string/dummy_text_2" />
     </androidx.cardview.widget.CardView>
-
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/webview" />
 
 </LinearLayout>
