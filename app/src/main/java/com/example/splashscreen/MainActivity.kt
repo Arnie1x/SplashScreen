@@ -64,12 +64,9 @@ class StartGameDialogFragment : DialogFragment() {
         return activity?.let {
             // Use the Builder class for convenient dialog construction.
             val builder = AlertDialog.Builder(it)
-            builder.setMessage("Hello There")
-                .setPositiveButton("Hi") { dialog, id ->
+            builder.setMessage("This is a Dialog Box")
+                .setPositiveButton("Press Here") { dialog, id ->
                     // START THE GAME!
-                }
-                .setNegativeButton("Hello") { dialog, id ->
-                    // User cancelled the dialog.
                 }
             // Create the AlertDialog object and return it.
             builder.create()
