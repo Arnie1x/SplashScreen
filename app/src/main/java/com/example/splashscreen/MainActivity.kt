@@ -1,5 +1,6 @@
 package com.example.splashscreen
 
+import android.app.Dialog
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,8 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.DialogFragment
 import com.example.splashscreen.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -29,8 +32,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+            StartGameDialogFragment().show(supportFragmentManager, "GAME_DIALOG")
         }
     }
 
@@ -54,5 +56,23 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
+    }
+}
+
+class StartGameDialogFragment : DialogFragment() {
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        return activity?.let {
+            // Use the Builder class for convenient dialog construction.
+            val builder = AlertDialog.Builder(it)
+            builder.setMessage("Hello There")
+                .setPositiveButton("Hi") { dialog, id ->
+                    // START THE GAME!
+                }
+                .setNegativeButton("Hello") { dialog, id ->
+                    // User cancelled the dialog.
+                }
+            // Create the AlertDialog object and return it.
+            builder.create()
+        } ?: throw IllegalStateException("Activity cannot be null")
     }
 }
