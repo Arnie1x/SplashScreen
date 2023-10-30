@@ -1,10 +1,14 @@
 package com.example.splashscreen
 
 import android.os.Bundle
+import android.app.Activity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
+import com.example.splashscreen.databinding.FragmentFirstBinding
+import com.example.splashscreen.databinding.FragmentFourthBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,18 +27,30 @@ class FourthFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
     }
 
+    private var _binding: FragmentFourthBinding? = null
+
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fourth, container, false)
+
+        _binding = FragmentFourthBinding.inflate(inflater, container, false)
+        val myWebView: WebView = binding.webview.findViewById(R.id.webview)
+        myWebView.loadUrl("https://www.google.com")
+        return binding.root
+
     }
 
     companion object {
