@@ -47,6 +47,9 @@ class ThirdFragment : Fragment() {
         binding.button9.setOnClickListener {
             findNavController().navigate(R.id.action_ThirdFragment_to_FifthFragment)
         }
+        binding.button11.setOnClickListener {
+            findNavController().navigate(R.id.action_ThirdFragment_to_SixthFragment)
+        }
     }
 
     override fun onDestroyView() {

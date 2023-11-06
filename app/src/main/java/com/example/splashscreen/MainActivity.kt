@@ -47,7 +47,9 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.action_settings -> {
+                MyDialogFragment().show(supportFragmentManager, "GAME_DIALOG")
+                true}
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -70,6 +72,21 @@ class StartGameDialogFragment : DialogFragment() {
                 }
                 .setNegativeButton("Hello") { dialog, id ->
                     // User cancelled the dialog.
+                }
+            // Create the AlertDialog object and return it.
+            builder.create()
+        } ?: throw IllegalStateException("Activity cannot be null")
+    }
+}
+
+class MyDialogFragment : DialogFragment() {
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        return activity?.let {
+            // Use the Builder class for convenient dialog construction.
+            val builder = AlertDialog.Builder(it)
+            builder.setMessage("2nd Dialog")
+                .setPositiveButton("Press Here") { dialog, id ->
+                    // START THE GAME!
                 }
             // Create the AlertDialog object and return it.
             builder.create()

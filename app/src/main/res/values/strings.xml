@@ -7,12 +7,15 @@
     <string name="third_fragment_label">Fragment 3</string>
     <string name="fourth_fragment_label">Fragment 4</string>
     <string name="fifth_fragment_label">Fragment 5</string>
+    <string name="sixth_fragment_label">Fragment 6</string>
     <string name="next">Fragment 2</string>
     <string name="previous">Fragment 1</string>
     <string name="dummy_text_1">A Fragment represents a reusable portion of your app\'s UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can\'t live on their own. </string>
     <string name="dummy_text_2">They must be hosted by an activity or another fragment. The fragment\'s view hierarchy becomes part of, or attaches to, the host\'s view hierarchy.</string>
     <string name="dummy_text_3">A HorizontalScrollView is a layout container for a view hierarchy that can be scrolled by the user, allowing it to be larger than the physical display. A HorizontalScrollView is a FrameLayout, meaning you should place one child in it containing the entire contents scroll. This child may itself be a layout manager with a complex hierarchy of objects. A child that is often used is a LinearLayout in a horizontal orientation, presenting a horizontal array of top-level items that the user can scroll through.</string>
+    <string name="dummy_text_5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
     <string name="dummy_content_description">Alt Text</string>
+
     <string name="dummy_text_4">Below is an example of a Horizontal Scroll View with images</string>
 
     <string name="hello_first_fragment">Fragment 1</string>

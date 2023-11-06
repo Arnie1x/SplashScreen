@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_FifthFragment"
             app:destination="@id/FifthFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SixthFragment"
+            app:destination="@id/SixthFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -42,6 +45,9 @@
         <action
             android:id="@+id/action_SecondFragment_to_FifthFragment"
             app:destination="@id/FifthFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_SixthFragment"
+            app:destination="@id/SixthFragment" />
     </fragment>
     <fragment
         android:id="@+id/ThirdFragment"
@@ -61,6 +67,9 @@
         <action
             android:id="@+id/action_ThirdFragment_to_FifthFragment"
             app:destination="@id/FifthFragment" />
+        <action
+            android:id="@+id/action_ThirdFragment_to_SixthFragment"
+            app:destination="@id/SixthFragment" />
     </fragment>
     <fragment
         android:id="@+id/FourthFragment"
@@ -73,5 +82,11 @@
         android:name="com.example.splashscreen.FifthFragment"
         android:label="Fifth Fragment"
         tools:layout="@layout/fragment_fifth">
+    </fragment>
+    <fragment
+        android:id="@+id/SixthFragment"
+        android:name="com.example.splashscreen.SixthFragment"
+        android:label="Sixth Fragment"
+        tools:layout="@layout/fragment_sixth">
     </fragment>
 </navigation>

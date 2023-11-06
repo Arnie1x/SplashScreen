@@ -44,4 +44,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="@string/fifth_fragment_label" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/sixth_fragment_label" />
 </GridLayout>
