@@ -8,6 +8,7 @@
     <string name="fourth_fragment_label">Fragment 4</string>
     <string name="fifth_fragment_label">Fragment 5</string>
     <string name="sixth_fragment_label">Fragment 6</string>
+    <string name="maps_fragment_label">Google Maps</string>
     <string name="next">Fragment 2</string>
     <string name="previous">Fragment 1</string>
     <string name="dummy_text_1">A Fragment represents a reusable portion of your app\'s UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can\'t live on their own. </string>
